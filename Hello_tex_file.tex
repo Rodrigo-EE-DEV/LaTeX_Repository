@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{comment}
+
+\usepackage{mathtools}
+
+%   One-line comment
+\begin{comment}
+    multiple-line
+    comments
+\end{comment}
+
+\begin{comment}
+        The Math Section was made with AI tool
+\end{comment}
+
+\author{Myself :)}
+\date{November 12}
+\title{Hello World}
+
+\begin{document}
+    \maketitle 
+    \newpage
+    \section{How you're doing?}
+    \subsection{fine thank you!}
+    \begin{enumerate}
+        \item this is a numbered
+        \item ordered list
+        \item of items
+    \end{enumerate}
+    And this is a \\ break line with \textbf{\textit{bold-italic format.}}
+    \begin{itemize}
+        \item This is a not numbered
+        \item and not ordered
+        \item list of items
+        \item \begin{enumerate}
+            \item and this is
+            \item an ordered list
+            \item inside of it
+        \end{enumerate}
+    \end{itemize}
+    \section{Math}
+
+    A simple State-State representation of a Mass-Spring system:\\ \\
+    
+    \begin{math}
+        \mathbf{x}(t) = \begin{bmatrix} x(t) \\ v(t) \end{bmatrix}
+    \end{math}
+    \\
+    where \( x(t) \) is the displacement and \( v(t) = \frac{dx(t)}{dt} \) is the velocity.\\
+
+    The state-space equations are:\\
+    \begin{math}
+        \frac{d}{dt} \begin{bmatrix} x(t) \\ v(t) \end{bmatrix} = \begin{bmatrix} 0 & 1 \\ -\frac{k}{m} & 0 \end{bmatrix} \begin{bmatrix} x(t) \\ v(t) \end{bmatrix} + \begin{bmatrix} 0 \\ \frac{1}{m} \end{bmatrix} F(t)
+    \end{math}\\
+    and the output equation is:\\
+    \begin{math}
+        y(t) = \begin{bmatrix} 1 & 0 \end{bmatrix} \begin{bmatrix} x(t) \\ v(t) \end{bmatrix}
+    \end{math}
+\end{document}
+    
